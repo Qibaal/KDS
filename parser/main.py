@@ -1,7 +1,7 @@
 from Bio import SeqIO
 
 # Specify the path to your file
-file_path = "polar_bear.gene.cds\polar_bear.v1.5.cds.change"
+file_path = "data\Protein Sequence & Structure\polar_bear.gene.cds"
 
 # Read and parse the sequences from the file
 for record in SeqIO.parse(file_path, "fasta"):
