@@ -40,10 +40,15 @@ def generate_nmr_stacked_bar():
 
     # 5. Buat stacked bar chart
     fig, ax = plt.subplots(figsize=(10, 6))
+    palette_blue = [
+        "#03045e", "#0077b6", "#00b4d8", "#90e0ef"
+    ]
+
     df_plot.plot(
         kind='bar',
         stacked=True,
-        ax=ax
+        ax=ax,
+        color=palette_blue
     )
 
     ax.set_xlabel('Polar Bear')
@@ -107,7 +112,7 @@ def generate_nmr_heatmap():
     fig, ax = plt.subplots(figsize=(8, 6))
 
     # Menggunakan colormap 'viridis' (atau sesuaikan sesuai selera)
-    cax = ax.imshow(data_matrix, aspect='auto', cmap='viridis')
+    cax = ax.imshow(data_matrix, aspect='auto', cmap='Blues')
 
     # 7. Set label sumbu:
     #    • X-axis → nama-nama lipid (kolom)
