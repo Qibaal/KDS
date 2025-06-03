@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>README - Analisis Adaptasi Anti-Icing pada Bulu Beruang Kutub</title>
 </head>
 <body>
 
